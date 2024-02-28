@@ -12,7 +12,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class TypeProducts {
+public class TypeProductsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long typeProductId;
@@ -21,5 +21,5 @@ public class TypeProducts {
     @Column(name = "typeProduct")
     private String typeProduct;
     @OneToOne(mappedBy = "typeProducts", cascade = CascadeType.ALL)
-    private DeliveryPlan deliveryPlan;
+    private DeliveryPlanEntity deliveryPlan;
 }

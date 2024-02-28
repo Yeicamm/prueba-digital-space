@@ -7,18 +7,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "WarehouseDelivery")
+@Table(name = "Seaports")
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class WarehouseDelivery {
+public class SeaportsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long warehouseDeliveryId;
-    @Column(name = "warehouseDelivery",unique = true)
-    private String warehouseDelivery;
-    @OneToOne(mappedBy = "warehouseDelivery", cascade = CascadeType.ALL)
-    private DeliveryPlan deliveryPlan;
+    private Long seaportsId;
+    @Column(name = "seaports", unique = true, nullable = false)
+    private String seaports;
+    @OneToOne(mappedBy = "seaports", cascade = CascadeType.ALL)
+    private DeliveryPlanEntity deliveryPlan;
 }

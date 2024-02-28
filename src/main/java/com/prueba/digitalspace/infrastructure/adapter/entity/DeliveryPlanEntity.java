@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DeliveryPlan {
+public class DeliveryPlanEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long deliveryPlanId;
@@ -30,14 +30,14 @@ public class DeliveryPlan {
     private String guideNumber;
     @OneToOne
     @JoinColumn(name = "typeProductId", unique = true)
-    private TypeProducts typeProducts;
+    private TypeProductsEntity typeProducts;
     @OneToOne
     @JoinColumn(name = "warehouseDeliveryId", unique = true)
-    private WarehouseDelivery warehouseDelivery;
+    private WarehouseDeliveryEntity warehouseDelivery;
     @OneToOne
     @JoinColumn(name = "seaportId", unique = true)
-    private Seaports seaports;
+    private SeaportsEntity seaports;
     @ManyToOne
     @JoinColumn(name = "customerId", nullable = false)
-    private Customers customers;
+    private CustomersEntity customers;
 }

@@ -15,7 +15,7 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Customers {
+public class CustomersEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long customerId;
@@ -31,5 +31,5 @@ public class Customers {
     @Column(name = "identificationNumber", unique = true, nullable = false)
     private String identificationNumber;
     @OneToMany(mappedBy = "customers", cascade = CascadeType.ALL)
-    private List<DeliveryPlan> deliveryPlans;
+    private List<DeliveryPlanEntity> deliveryPlans;
 }
