@@ -23,21 +23,21 @@ public class DeliveryPlanEntity {
     @Column(name = "dateRegister")
     private LocalDateTime dateRegister;
     @Column(name = "dateDelivery")
-    private LocalDateTime dateDelivery;
+    private String dateDelivery;
     @Column(name = "vehicleNumber")
     private String vehicleNumber;
     @Column(name = "guideNumber")
     private String guideNumber;
     @OneToOne
-    @JoinColumn(name = "typeProductId", unique = true)
+    @JoinColumn(name = "typeProductId")
     private TypeProductsEntity typeProducts;
     @OneToOne
-    @JoinColumn(name = "warehouseDeliveryId", unique = true)
-    private WarehouseDeliveryEntity warehouseDelivery;
+    @JoinColumn(name = "warehouseDeliveryId")
+    private WarehouseEntity warehouseDelivery;
     @OneToOne
-    @JoinColumn(name = "seaportId", unique = true)
+    @JoinColumn(name = "seaportId")
     private SeaportsEntity seaports;
     @ManyToOne
-    @JoinColumn(name = "customerId", nullable = false)
+    @JoinColumn(name = "customerId")
     private CustomersEntity customers;
 }

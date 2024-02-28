@@ -8,15 +8,8 @@ public class RequestTypeProductDto {
         return descriptionProductDto;
     }
 
-    public void setDescriptionProductDto(String descriptionProductDto) {
-        this.descriptionProductDto = descriptionProductDto;
-    }
-
     public String getTypeProductDto() {
         return typeProductDto;
     }
 
-    public void setTypeProductDto(String typeProductDto) {
-        this.typeProductDto = typeProductDto;
-    }
 }

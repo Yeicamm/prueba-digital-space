@@ -8,13 +8,13 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "WarehouseDelivery")
+@Table(name = "Warehouse")
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class WarehouseDeliveryEntity {
+public class WarehouseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long warehouseDeliveryId;

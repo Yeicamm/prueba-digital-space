@@ -1,7 +1,7 @@
 package com.prueba.digitalspace.application.usecase;
 
-import com.prueba.digitalspace.domain.model.dto.request.RequestWarehouseDeliveryDto;
+import com.prueba.digitalspace.domain.model.dto.request.RequestWarehouseDto;
 
 public interface WarehouseDeliveryService {
-    Object createWarehouseDelivery(RequestWarehouseDeliveryDto requestWarehouseDeliveryDto);
+    Object createWarehouseDelivery(RequestWarehouseDto requestWarehouseDeliveryDto);
 }

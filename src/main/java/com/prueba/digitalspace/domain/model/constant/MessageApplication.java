@@ -5,4 +5,6 @@ public class MessageApplication {
     public static String STRUCTURE_EMAIL = "The structure of the email should be xxxx@xxxxx.xxx.";
     public static String CREATE_TYPE_PRODUCT_SUCCESSFUL = "Type product create successful";
     public static String CREATE_WAREHOUSE_DELIVERY_SUCCESSFUL = "Warehouse delivery create successful";
+    public static String CREATE_SEAPORT_SUCCESSFUL = "Seaport create successful";
+    public static String CREATE_DELIVERY_PLAN_TRUCK_LOGISTIC_SUCCESSFUL = "Delivery plan truck logistic create successful";
 }
