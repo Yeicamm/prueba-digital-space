@@ -1,5 +1,6 @@
 package com.prueba.digitalspace.infrastructure.adapter.entity;
 
+import com.prueba.digitalspace.domain.model.enums.SiteEnum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,6 +19,9 @@ public class SeaportsEntity {
     private Long seaportsId;
     @Column(name = "seaports", unique = true, nullable = false)
     private String seaports;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "site")
+    private SiteEnum siteEnum;
     @OneToOne(mappedBy = "seaports", cascade = CascadeType.ALL)
     private DeliveryPlanEntity deliveryPlan;
 }

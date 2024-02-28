@@ -4,5 +4,5 @@ public class MessageApplication {
     public static String CREATE_CLIENT_SUCCESSFUL = "Client create successful";
     public static String STRUCTURE_EMAIL = "The structure of the email should be xxxx@xxxxx.xxx.";
     public static String CREATE_TYPE_PRODUCT_SUCCESSFUL = "Type product create successful";
-
+    public static String CREATE_WAREHOUSE_DELIVERY_SUCCESSFUL = "Warehouse delivery create successful";
 }
