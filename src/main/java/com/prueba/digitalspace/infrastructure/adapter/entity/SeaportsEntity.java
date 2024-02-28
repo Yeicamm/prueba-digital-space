@@ -17,7 +17,7 @@ public class SeaportsEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long seaportsId;
-    @Column(name = "seaports", unique = true, nullable = false)
+    @Column(name = "seaportsDescription", unique = true, nullable = false)
     private String seaports;
     @Enumerated(EnumType.STRING)
     @Column(name = "site")

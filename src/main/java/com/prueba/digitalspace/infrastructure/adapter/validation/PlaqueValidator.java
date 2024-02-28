@@ -12,4 +12,12 @@ public class PlaqueValidator {
         Matcher matcher = pattern.matcher(vehicleNumber);
         return matcher.matches();
     }
+    public static boolean validFleet(String vehicleNumber){
+        String valid = "^[A-Z]{3}\\d{4}[A-Z]$";
+
+        Pattern pattern = Pattern.compile(valid);
+
+        Matcher matcher = pattern.matcher(vehicleNumber);
+        return matcher.matches();
+    }
 }

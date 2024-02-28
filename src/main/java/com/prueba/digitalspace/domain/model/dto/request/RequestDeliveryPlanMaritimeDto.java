@@ -2,7 +2,7 @@ package com.prueba.digitalspace.domain.model.dto.request;
 
 import java.time.LocalDateTime;
 
-public class RequestDeliveryPlanTruckLogisticsDto {
+public class RequestDeliveryPlanMaritimeDto {
     private Long productQuantityDto;
     private LocalDateTime dateRegister;
     private String dateDelivery;
@@ -11,19 +11,19 @@ public class RequestDeliveryPlanTruckLogisticsDto {
     private Double price;
     private Double priceDiscount;
     private Long typeProducts;
-    private Long warehouseDelivery;
+    private Long seaports;
     private Long customers;
 
     public Double getPriceDiscount() {
         return priceDiscount;
     }
 
-    public Double getPrice() {
-        return price;
-    }
-
     public Long getProductQuantityDto() {
         return productQuantityDto;
+    }
+
+    public Long getSeaports() {
+        return seaports;
     }
 
     public LocalDateTime getDateRegister() {
@@ -42,12 +42,12 @@ public class RequestDeliveryPlanTruckLogisticsDto {
         return guideNumber;
     }
 
-    public Long getTypeProducts() {
-        return typeProducts;
+    public Double getPrice() {
+        return price;
     }
 
-    public Long getWarehouseDelivery() {
-        return warehouseDelivery;
+    public Long getTypeProducts() {
+        return typeProducts;
     }
     public Long getCustomers() {
         return customers;

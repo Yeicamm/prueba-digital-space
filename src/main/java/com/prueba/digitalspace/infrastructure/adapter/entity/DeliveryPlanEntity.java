@@ -28,6 +28,10 @@ public class DeliveryPlanEntity {
     private String vehicleNumber;
     @Column(name = "guideNumber")
     private String guideNumber;
+    @Column(name = "price")
+    private Double price;
+    @Column(name = "priceDiscount")
+    private Double priceDiscount;
     @OneToOne
     @JoinColumn(name = "typeProductId")
     private TypeProductsEntity typeProducts;

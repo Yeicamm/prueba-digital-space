@@ -9,4 +9,8 @@ public class MessageApplication {
     public static String CREATE_DELIVERY_PLAN_TRUCK_LOGISTIC_SUCCESSFUL = "Delivery plan truck logistic create successful";
     public static String STRUCTURE_PLAQUE = "The plaque must have 3 initial letters and 3 final numbers";
     public static String STRUCTURE_GUIDE_NUMBER = "The structure guide number is 10 number";
+    public static String CREATE_DELIVERY_PLAN_MARITIME_SUCCESSFUL = "Delivery plan truck logistic create successful";
+    public static String STRUCTURE_FLEET = "The Fleet must have 3 initial letters and 4 numbers and 1 final letter";
+
+
 }
