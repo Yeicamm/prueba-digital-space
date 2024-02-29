@@ -7,9 +7,7 @@ public class RequestTypeProductDto {
     public String getDescriptionProductDto() {
         return descriptionProductDto;
     }
-
     public String getTypeProductDto() {
         return typeProductDto;
     }
-
 }

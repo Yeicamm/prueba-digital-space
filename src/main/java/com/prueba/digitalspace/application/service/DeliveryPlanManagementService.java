@@ -12,6 +12,8 @@ import com.prueba.digitalspace.infrastructure.adapter.validation.PlaqueValidator
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class DeliveryPlanManagementService implements DeliveryPlanService {
@@ -53,5 +55,9 @@ public class DeliveryPlanManagementService implements DeliveryPlanService {
         }else {
             return MessageApplication.STRUCTURE_GUIDE_NUMBER;
         }
+    }
+    @Override
+    public List<DeliveryPlanEntity> findByGuideNumber(String guideNumber) {
+        return deliveryPlanRepository.findByGuideNumber(guideNumber);
     }
 }

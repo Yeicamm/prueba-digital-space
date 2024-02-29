@@ -10,14 +10,14 @@ public class RequestCustomerDto {
     private String addressDto;
     @Enumerated(EnumType.STRING)
     private IdentificationTypeEnum identificationTypeEnumDto;
-    private String IdentificationNumber;
+    private String identificationNumber;
 
     public String getIdentificationNumber() {
-        return IdentificationNumber;
+        return identificationNumber;
     }
 
     public void setIdentificationNumber(String identificationNumber) {
-        IdentificationNumber = identificationNumber;
+        this.identificationNumber = identificationNumber;
     }
 
     public String getCustomerNameDto() {
