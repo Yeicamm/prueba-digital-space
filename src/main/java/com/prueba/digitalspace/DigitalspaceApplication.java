@@ -8,6 +8,7 @@ public class DigitalspaceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DigitalspaceApplication.class, args);
+
 	}
 
 }
